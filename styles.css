@@ -1,138 +1,154 @@
-/* Reset browser defaults */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General styling */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f7f6;
+    font-family: 'Lato', sans-serif;
+    background-color: #f7f9f8; /* Light background for contrast */
     color: #333;
     margin: 0;
-    padding: 0;
-    line-height: 1.6;
+    padding: 20px; /* Add padding to body for spacing */
 }
 
-/* Navigation Bar */
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white; /* White background for the paper effect */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Navbar styling */
 nav {
-    background-color: #4CAF50;
-    padding: 15px;
+    background-color: #4CAF50; /* Matches header color */
+    padding: 10px 0;
     text-align: center;
+    margin-bottom: 20px; /* Space between nav and content */
+    border-radius: 8px; /* Rounded corners for the navbar */
 }
 
-nav ul {
-    list-style-type: none;
+nav .logo h1 {
+    color: white;
+    font-size: 2rem;
+    margin: 0; /* Remove default margin */
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+nav .nav-links {
+    display: inline-block;
+    list-style: none;
 }
 
-nav ul li a {
+nav .nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Header Styling */
+/* Header */
 header {
     background-color: #4CAF50;
     color: white;
     text-align: center;
-    padding: 50px 0;
-    border-radius: 0 0 50px 50px;
+    padding: 20px 0;
+    border-radius: 8px;
 }
 
 header h1 {
-    font-size: 3rem;
-    letter-spacing: 1px;
+    font-size: 2.5em;
+    margin: 0;
 }
 
-/* Main Container Styling */
-.container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
+/* Section headings */
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.75em;
     color: #4CAF50;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 h3 {
-    font-size: 1.5rem;
-    margin: 20px 0 10px;
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
     color: #333;
 }
 
-/* List Styling */
+/* Lists */
 ul {
     list-style-type: disc;
-    margin-left: 40px;
-    color: #555;
-}
-
-ul li {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
+    margin-left: 20px;
+    line-height: 1.6;
 }
 
 /* Paragraphs */
 p {
-    font-size: 1.1rem;
-    color: #555;
+    line-height: 1.6;
     margin-bottom: 20px;
 }
 
-/* Call to Action */
-.cta {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.cta p {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.pdf-button {
-    display: inline-block;
+/* Button styling */
+a.btn {
     background-color: #4CAF50;
     color: white;
-    padding: 12px 30px;
     text-decoration: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
     border-radius: 8px;
     transition: background-color 0.3s;
 }
 
-.pdf-button:hover {
+a.btn:hover {
     background-color: #45a049;
+}
+
+/* Contact Section Styling */
+.contact-section {
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 12px; /* Rounded corners */
+    margin-top: 30px; /* Space above the contact section */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.contact-section a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #f4f7f6;
-    color: #333;
-    margin-top: 40px;
+    margin-top: 50px;
+    font-size: 1.2em;
 }
 
 footer p {
-    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+footer strong {
+    font-size: 1.2em;
+    color: #4CAF50;
 }
 
 /* Responsive Design */
@@ -142,7 +158,7 @@ footer p {
     }
 
     header h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     h2 {
@@ -153,7 +169,11 @@ footer p {
         font-size: 1.3rem;
     }
 
-    .pdf-button {
-        padding: 10px 25px;
+    nav .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    nav .nav-links a {
+        font-size: 1rem; /* Smaller font size for mobile */
     }
 }
